@@ -50,7 +50,25 @@
       "linter": "eslint",
       "style": "scss",
       "unitTestRunner": "jest"
+    },
+    "@nx/angular:library": {
+      "linter": "eslint",
+      "unitTestRunner": "jest"
+    },
+    "@nx/angular:component": {
+      "style": "css"
     }
   },
-  "nxCloudAccessToken": "YWFkZGMxNjYtN2FmNi00OTVkLTk3Y2MtOTFiZDY4MTU3YWZkfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "YWFkZGMxNjYtN2FmNi00OTVkLTk3Y2MtOTFiZDY4MTU3YWZkfHJlYWQtd3JpdGU=",
+  "plugins": [
+    {
+      "plugin": "@nx/storybook/plugin",
+      "options": {
+        "serveStorybookTargetName": "storybook",
+        "buildStorybookTargetName": "build-storybook",
+        "testStorybookTargetName": "test-storybook",
+        "staticStorybookTargetName": "static-storybook"
+      }
+    }
+  ]
 }

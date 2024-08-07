@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
+  imports: [RouterModule],
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  template: ` <h1 class="text-center text-2xl text-rose-500 font-semibold">
+    Welcome to the {{ title }} zone
+    <router-outlet />
+  </h1>`,
 })
 export class AppComponent {
-  title = 'rfm-ng-2024';
+  title = 'Angular';
 }
