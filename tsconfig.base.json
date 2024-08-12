@@ -18,9 +18,9 @@
       "@rfm-ng-2024/root-shell": [
         "packages/web/shell/feature-shell/src/index.ts"
       ],
-      "@rfm-ng-2024/storybook": ["packages/shared/storybook/index.ts"],
       "@rfm-ng-2024/shared-assets": ["packages/shared/assets/src/index.ts"],
-      "@rfm-ng-2024/shared-utils": ["packages/shared/utils/src/index.ts"]
+      "@rfm-ng-2024/shared-utils": ["packages/shared/utils/src/index.ts"],
+      "@rfm-ng-2024/storybook": ["packages/shared/storybook/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
